@@ -1,0 +1,26 @@
+GET http://localhost:7000/api/rooms
+
+###
+
+POST http://localhost:8000/api/rooms HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Chambre 6",
+  "maxPersons": 10, 
+  "promotion" : true
+}
+
+###
+
+GET http://localhost:8000/api/rooms/641ade3ed328a16604b7b23f
+
+###
+
+PATCH http://localhost:8000/api/rooms/636fc1e262e35d2032de84db HTTP/1.1
+content-type: application/json
+
+{
+  "name": "duo modif", 
+  "maxPersons" : 5
+}
