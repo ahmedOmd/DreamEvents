@@ -20,7 +20,6 @@ export const addRoom = async (req, res) => {
 export const deleteRoom = async (req, res) => {
   console.log(req.params);
   const room = await RoomModel.findByIdAndDelete(req.params.room_id);
-
   if (!room) res.status(404).send("Aucune chambre trouvée.");
   res.status(200).send();
 };

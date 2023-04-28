@@ -1,12 +1,7 @@
 import React from "react";
-import RoomForm from "../components/RoomForm";
 
 const HomePage = () => {
-  return (
-    <div>
-      <RoomForm id={null} room={null} />
-    </div>
-  );
+  return <div>hello</div>;
 };
 
 export default HomePage;
